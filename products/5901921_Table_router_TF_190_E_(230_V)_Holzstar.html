@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table router (5901921)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .product-container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product-header {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .product-title {
+            font-size: 24px;
+            margin: 0 0 10px 0;
+        }
+        .product-id {
+            color: #777;
+            font-size: 14px;
+        }
+        .product-info {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            row-gap: 10px;
+            margin-bottom: 20px;
+        }
+        .label {
+            font-weight: bold;
+        }
+        .manufacturer-info {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .weight-info {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+        .catalog-path {
+            background-color: #f5f5f5;
+            border-radius: 4px;
+            padding: 8px;
+        }
+        .path-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        .path-list li {
+            padding: 3px 0;
+            border-bottom: 1px dotted #ddd;
+        }
+        .path-list li:last-child {
+            border-bottom: none;
+        }
+        .item-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        .item-list li {
+            padding: 5px 8px;
+            margin-bottom: 5px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            border-left: 3px solid #999;
+        }
+        .references-list .item-list li {
+            border-left-color: #007bff;
+        }
+        .features-list .item-list li {
+            border-left-color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-header">
+            <h1 class="product-title">Table router</h1>
+            <div class="product-id">Article Number: 5901921</div>
+        </div>
+        
+        <div class="product-info">
+            <div class="label">Brand:</div>
+            <div>Holzstar</div>
+            
+            <div class="label">Type:</div>
+            <div>TF 190 E (230 V)</div>
+            
+            <div class="label">Model:</div>
+            <div>-</div>
+
+            <div class="label">Catalog Path:</div>
+            <div class="catalog-path">
+                <ul class="path-list">
+                    <li>1</li>
+                    <li>Products in catalog/promotions Autumn-Winter 2024/2025 and spare parts</li>
+                    <li>2</li>
+                    <li>Machines and accessories</li>
+                    <li>5632</li>
+                    <li>Woodworking machinery</li>
+                    <li>5800</li>
+                    <li>Moulders</li>
+                    <li>5819</li>
+                    <li>Holzstar TF</li>
+                    <li>5822</li>
+                    <li>TF 190 E (230 V)</li>
+                </ul>
+            </div>
+
+            <div class="label">References:</div>
+            <div class="references-list">
+                <ul class="item-list">
+                    <li>Accessory</li>
+                    <li>1</li>
+                    <li>5911921</li>
+                    <li>Accessory</li>
+                    <li>1</li>
+                    <li>5911922</li>
+                    <li>Accessory</li>
+                    <li>1</li>
+                    <li>5911920</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>05901921110CPL</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>05901921105</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>05901921358</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>05901921419</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>05901921208</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>05901921209</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>05901921319</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>05901921334</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>05901921338</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590196PJ240</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>05901921558CPL</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>05901921342</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>05901921351</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>05901921203CPL</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>05901921420</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>05901921249</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>05901921570CPL</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>05901921579CPL</li>
+                </ul>
+            </div>
+
+            <div class="label">Features:</div>
+            <div class="features-list">
+                <ul class="item-list">
+                    <li>bdc0a764-065a-4b5a-9bdc-a563008bf6f9</li>
+                    <li>Dimensions and weights</li>
+                    <li>c1e34661-3042-4857-9b6e-a52a00d92402</li>
+                    <li>Length (product) approx.</li>
+                    <li>730</li>
+                    <li>mm</li>
+                    <li>bdc0a764-065a-4b5a-9bdc-a563008bf6f9</li>
+                    <li>Dimensions and weights</li>
+                    <li>c82c812d-5261-4e79-a67b-a52a00d9240c</li>
+                    <li>Width/depth (product) approx.</li>
+                    <li>500</li>
+                    <li>mm</li>
+                    <li>bdc0a764-065a-4b5a-9bdc-a563008bf6f9</li>
+                    <li>Dimensions and weights</li>
+                    <li>34741680-b27f-4ae0-b2e4-a52a00d92416</li>
+                    <li>Height (product) approx.</li>
+                    <li>1200</li>
+                    <li>mm</li>
+                    <li>bdc0a764-065a-4b5a-9bdc-a563008bf6f9</li>
+                    <li>Dimensions and weights</li>
+                    <li>b4d3fc7d-ca54-4ef3-acab-a52a00dbf77c</li>
+                    <li>Net weight approx.</li>
+                    <li>140</li>
+                    <li>kg</li>
+                    <li>58398800-515f-4fe4-930d-a62b00a47f18</li>
+                    <li>Extraction port</li>
+                    <li>eb836a1e-4915-4ccb-b74f-a63a00bb6560</li>
+                    <li>Extraction port diameter</li>
+                    <li>100</li>
+                    <li>mm</li>
+                    <li>bdc41fbd-0e5a-4412-9e0e-a63a008c3fea</li>
+                    <li>Work table </li>
+                    <li>f43437c8-2e76-4c76-88b7-a63a00bb64af</li>
+                    <li>Work table length </li>
+                    <li>690</li>
+                    <li>mm</li>
+                    <li>bdc41fbd-0e5a-4412-9e0e-a63a008c3fea</li>
+                    <li>Work table </li>
+                    <li>9bcf19fb-c17b-497e-949d-a63a00bb64c9</li>
+                    <li>Work table width  </li>
+                    <li>480</li>
+                    <li>mm</li>
+                    <li>bdc41fbd-0e5a-4412-9e0e-a63a008c3fea</li>
+                    <li>Work table </li>
+                    <li>b86d2441-5352-4550-aab1-a63a00bb64d3</li>
+                    <li>Table height </li>
+                    <li>900</li>
+                    <li>mm</li>
+                    <li>6249fc14-79cb-41b3-b8a9-a58c0108e538</li>
+                    <li>Equipment</li>
+                    <li>331b1caa-82e5-4ebe-9ae6-ab5f009ac8d7</li>
+                    <li>Height adjustment of the spindle</li>
+                    <li>manual</li>
+                    <li></li>
+                    <li>5403c52f-6cb0-4772-9760-a5fa00834c4c</li>
+                    <li>Electrical Data</li>
+                    <li>075c04cd-685e-491e-afd6-a52a00dbf76b</li>
+                    <li>Supply voltage</li>
+                    <li>230</li>
+                    <li>V</li>
+                    <li>5403c52f-6cb0-4772-9760-a5fa00834c4c</li>
+                    <li>Electrical Data</li>
+                    <li>5c502ecf-af43-4d7a-8bf4-a52a00dbf77a</li>
+                    <li>Mains frequency</li>
+                    <li>50</li>
+                    <li>Hz</li>
+                    <li>5403c52f-6cb0-4772-9760-a5fa00834c4c</li>
+                    <li>Electrical Data</li>
+                    <li>d10a932f-0c57-412e-80e5-a91b00d11728</li>
+                    <li>Drive motor output</li>
+                    <li>2,2</li>
+                    <li>kW</li>
+                    <li>5403c52f-6cb0-4772-9760-a5fa00834c4c</li>
+                    <li>Electrical Data</li>
+                    <li>7ba41e44-8ca7-40f5-92b3-a91900b03f08</li>
+                    <li>Absorbed power drive motor</li>
+                    <li>2,8</li>
+                    <li>kW</li>
+                    <li>5403c52f-6cb0-4772-9760-a5fa00834c4c</li>
+                    <li>Electrical Data</li>
+                    <li>600b9351-0d27-4c25-88f4-a91900c35c30</li>
+                    <li>Protection class drive motor</li>
+                    <li>IP54</li>
+                    <li></li>
+                    <li>5403c52f-6cb0-4772-9760-a5fa00834c4c</li>
+                    <li>Electrical Data</li>
+                    <li>a46a3545-f1ad-4e1a-8674-a91900d47abe</li>
+                    <li>Duty type drive motor</li>
+                    <li>S1</li>
+                    <li></li>
+                    <li>0cf594e1-6420-48a5-b49f-a4ff008b11cc</li>
+                    <li>Milling spindle</li>
+                    <li>77af9bf2-fc18-420c-a600-a63a00bb64f8</li>
+                    <li>Usable spindle length</li>
+                    <li>100</li>
+                    <li>mm</li>
+                    <li>0cf594e1-6420-48a5-b49f-a4ff008b11cc</li>
+                    <li>Milling spindle</li>
+                    <li>8c75a3f9-fbdd-45b2-a11f-a63a00bb6507</li>
+                    <li>Milling spindle stroke </li>
+                    <li>100</li>
+                    <li>mm</li>
+                    <li>0cf594e1-6420-48a5-b49f-a4ff008b11cc</li>
+                    <li>Milling spindle</li>
+                    <li>2614fd61-fd61-4020-96e2-a63a00bb6515</li>
+                    <li>Max. spindle protrusion over the table</li>
+                    <li>100</li>
+                    <li>mm</li>
+                    <li>0cf594e1-6420-48a5-b49f-a4ff008b11cc</li>
+                    <li>Milling spindle</li>
+                    <li>36b63241-aa55-423e-9dca-a63a00bb651d</li>
+                    <li>Spindle speed(s)</li>
+                    <li>1800/3000/6000/9000</li>
+                    <li>min¯¹</li>
+                    <li>0cf594e1-6420-48a5-b49f-a4ff008b11cc</li>
+                    <li>Milling spindle</li>
+                    <li>fe4b2132-d6a8-4bca-b715-a63a00bb6524</li>
+                    <li>Speed regulation</li>
+                    <li>Strap</li>
+                    <li></li>
+                    <li>0cf594e1-6420-48a5-b49f-a4ff008b11cc</li>
+                    <li>Milling spindle</li>
+                    <li>e19fb5de-afa4-4b87-9b9e-ab5f00ca9bbb</li>
+                    <li>Milling spindle speed display</li>
+                    <li>LED on the machine front</li>
+                    <li></li>
+                    <li>0cf594e1-6420-48a5-b49f-a4ff008b11cc</li>
+                    <li>Milling spindle</li>
+                    <li>4a7c63d8-ade4-42b5-b419-a63a00bb652b</li>
+                    <li>Spindle arbor diamter </li>
+                    <li>30</li>
+                    <li>mm</li>
+                    <li>598066f9-4074-467f-a8c7-a63a008c5d4a</li>
+                    <li>Milling cutter diameter max.</li>
+                    <li>00d6a3e1-9c28-4c68-aeb1-a63a00bb653b</li>
+                    <li>Max. tool diamter lowerable </li>
+                    <li>200</li>
+                    <li>mm</li>
+                </ul>
+            </div>
+
+            <div class="label">ShortDescription:</div>
+            <div>With rigid milling spindle</div>
+
+            <div class="label">Classification:</div>
+            <div>ToolMachine</div>
+
+            <div class="label">EanNumber:</div>
+            <div>4036351318385</div>
+
+            <div class="label">CustomNumber:</div>
+            <div>84659200</div>
+
+            <div class="label">ShipmentType:</div>
+            <div>Carrier</div>
+
+            <div class="label">DeliveryContent:</div>
+            <div>-</div>
+
+            <div class="label">KeyFeatures:</div>
+            <div><ul><li>Quick and easy changing of the speed using multiple V-belts</li><li>Speed setting displayed by LED lights</li><li>Large work surface thanks to the torsion-free grey cast iron table</li><li>Hold-down unit for precise workpiece guidance</li><li>Sliding table and chassis available as an accessory</li></ul></div>
+
+            <div class="label">Keywords:</div>
+            <div>-</div>
+
+            <div class="label">Length:</div>
+            <div>730</div>
+
+            <div class="label">Height:</div>
+            <div>680</div>
+
+            <div class="label">Width:</div>
+            <div>520</div>
+
+            <div class="label">WeightGross:</div>
+            <div>155</div>
+
+            <div class="label">WeightNet:</div>
+            <div>140</div>
+
+            <div class="label">WeightUnit:</div>
+            <div>kg</div>
+
+            <div class="label">ClassificationSystems:</div>
+            <div>ECLASS|5.1.4|17071190</div>
+
+            <div class="label">SeriesTypeDescription:</div>
+            <div>TF</div>
+
+            <div class="label">SeriesShortDescription:</div>
+            <div>-</div>
+
+            <div class="label">MinimalSellingUnit:</div>
+            <div>1</div>
+
+            <div class="label">SellingUnit:</div>
+            <div>pc(s).</div>
+
+        </div>
+
+        <div class="manufacturer-info">
+            <ul><li>Milling stop with finely adjustable aluminum stops</li><li>Quick and easy changing of the speed using multiple V-belts</li><li>Speed setting displayed by LED lights</li><li>Large work surface thanks to the torsion-free grey cast iron table</li><li>Selector switch for clockwise/counterclockwise rotation of the milling spindle</li><li>Milling unit made of grey cast iron</li><li>Hold-down unit for precise workpiece guidance</li><li>Sliding table and chassis available as an accessory</li></ul>
+<strong>Manufacturer</strong>
+Stürmer Maschinen GmbH
+Dr.-Robert-Pfleger-Str. 26, 96103 Hallstadt, Germany
+info@stuermer-maschinen.de
+
+
+        </div>
+
+    </div>
+</body>
+</html>

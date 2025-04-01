@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table router (5220625)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .product-container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product-header {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .product-title {
+            font-size: 24px;
+            margin: 0 0 10px 0;
+        }
+        .product-id {
+            color: #777;
+            font-size: 14px;
+        }
+        .product-info {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            row-gap: 10px;
+            margin-bottom: 20px;
+        }
+        .label {
+            font-weight: bold;
+        }
+        .manufacturer-info {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .weight-info {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+        .catalog-path {
+            background-color: #f5f5f5;
+            border-radius: 4px;
+            padding: 8px;
+        }
+        .path-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        .path-list li {
+            padding: 3px 0;
+            border-bottom: 1px dotted #ddd;
+        }
+        .path-list li:last-child {
+            border-bottom: none;
+        }
+        .item-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        .item-list li {
+            padding: 5px 8px;
+            margin-bottom: 5px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            border-left: 3px solid #999;
+        }
+        .references-list .item-list li {
+            border-left-color: #007bff;
+        }
+        .features-list .item-list li {
+            border-left-color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-header">
+            <h1 class="product-title">Table router</h1>
+            <div class="product-id">Article Number: 5220625</div>
+        </div>
+        
+        <div class="product-info">
+            <div class="label">Brand:</div>
+            <div>Holzkraft CASADEI</div>
+            
+            <div class="label">Type:</div>
+            <div>F 23 TL</div>
+            
+            <div class="label">Model:</div>
+            <div>CASADEI</div>
+
+            <div class="label">Catalog Path:</div>
+            <div class="catalog-path">
+                <ul class="path-list">
+                    <li>1</li>
+                    <li>Products in catalog/promotions Autumn-Winter 2024/2025 and spare parts</li>
+                    <li>2</li>
+                    <li>Machines and accessories</li>
+                    <li>5632</li>
+                    <li>Woodworking machinery</li>
+                    <li>5800</li>
+                    <li>Moulders</li>
+                    <li>5838</li>
+                    <li>CASADEI F 23</li>
+                </ul>
+            </div>
+
+            <div class="label">References:</div>
+            <div class="references-list">
+                <ul class="item-list">
+                    <li>Accessory</li>
+                    <li>1</li>
+                    <li>5850223</li>
+                    <li>Accessory</li>
+                    <li>1</li>
+                    <li>5230603</li>
+                    <li>Accessory</li>
+                    <li>1</li>
+                    <li>5851000</li>
+                    <li>Accessory</li>
+                    <li>1</li>
+                    <li>5230601</li>
+                    <li>Accessory</li>
+                    <li>1</li>
+                    <li>5230602</li>
+                    <li>Accessory</li>
+                    <li>1</li>
+                    <li>5850243</li>
+                    <li>Accessory</li>
+                    <li>1</li>
+                    <li>5230604</li>
+                    <li>OptionalEquipment</li>
+                    <li>1</li>
+                    <li>5230611</li>
+                </ul>
+            </div>
+
+            <div class="label">Features:</div>
+            <div class="features-list">
+                <ul class="item-list">
+                    <li>bdc0a764-065a-4b5a-9bdc-a563008bf6f9</li>
+                    <li>Dimensions and weights</li>
+                    <li>b4d3fc7d-ca54-4ef3-acab-a52a00dbf77c</li>
+                    <li>Net weight approx.</li>
+                    <li>400</li>
+                    <li>kg</li>
+                    <li>58398800-515f-4fe4-930d-a62b00a47f18</li>
+                    <li>Extraction port</li>
+                    <li>516c448d-9bc4-45df-9e0f-a63a00bb6567</li>
+                    <li>Stop extraction port diameter</li>
+                    <li>1 x 120</li>
+                    <li>mm</li>
+                    <li>58398800-515f-4fe4-930d-a62b00a47f18</li>
+                    <li>Extraction port</li>
+                    <li>013c92b8-66e2-438a-afc7-a63a00bb656f</li>
+                    <li>Machine extraction port diameter</li>
+                    <li>1 x 120</li>
+                    <li>mm</li>
+                    <li>bdc41fbd-0e5a-4412-9e0e-a63a008c3fea</li>
+                    <li>Work table </li>
+                    <li>f43437c8-2e76-4c76-88b7-a63a00bb64af</li>
+                    <li>Work table length </li>
+                    <li>1200</li>
+                    <li>mm</li>
+                    <li>bdc41fbd-0e5a-4412-9e0e-a63a008c3fea</li>
+                    <li>Work table </li>
+                    <li>9bcf19fb-c17b-497e-949d-a63a00bb64c9</li>
+                    <li>Work table width  </li>
+                    <li>730</li>
+                    <li>mm</li>
+                    <li>d545187d-fb5e-422e-938b-a62b00a48e84</li>
+                    <li>Installation information</li>
+                    <li>2e355fc4-de4f-4d8d-a580-a728010e742a</li>
+                    <li>Space requirement length</li>
+                    <li>3150</li>
+                    <li>mm</li>
+                    <li>d545187d-fb5e-422e-938b-a62b00a48e84</li>
+                    <li>Installation information</li>
+                    <li>3a1efd3f-ea85-486b-bff2-a728010f4a99</li>
+                    <li>Space requirement width/depth</li>
+                    <li>2170</li>
+                    <li>mm</li>
+                    <li>d545187d-fb5e-422e-938b-a62b00a48e84</li>
+                    <li>Installation information</li>
+                    <li>2b647c19-592a-468c-9df8-a728010fc38d</li>
+                    <li>Space requirement explanation</li>
+                    <li>The dimensions take into account maximum travel distances or useful lengths.</li>
+                    <li></li>
+                    <li>d545187d-fb5e-422e-938b-a62b00a48e84</li>
+                    <li>Installation information</li>
+                    <li>06f70cb0-2fde-4739-8cda-a72801100bae</li>
+                    <li>Machine body length</li>
+                    <li>992</li>
+                    <li>mm</li>
+                    <li>d545187d-fb5e-422e-938b-a62b00a48e84</li>
+                    <li>Installation information</li>
+                    <li>e874907f-5188-45d7-bc24-a72801104bd7</li>
+                    <li>Machine body width/length</li>
+                    <li>577</li>
+                    <li>mm</li>
+                    <li>d545187d-fb5e-422e-938b-a62b00a48e84</li>
+                    <li>Installation information</li>
+                    <li>515e6a62-3370-41c7-bfdc-a728011075d5</li>
+                    <li>Work area length</li>
+                    <li>5000</li>
+                    <li>mm</li>
+                    <li>d545187d-fb5e-422e-938b-a62b00a48e84</li>
+                    <li>Installation information</li>
+                    <li>2e91904d-376f-4e87-ab4f-a7280110a2f4</li>
+                    <li>Work area width/depth</li>
+                    <li>5000</li>
+                    <li>mm</li>
+                    <li>d545187d-fb5e-422e-938b-a62b00a48e84</li>
+                    <li>Installation information</li>
+                    <li>7833b0cb-5b20-46fa-9316-a7280110c811</li>
+                    <li>Explanation of work area</li>
+                    <li>Please add the given dimensions with the required space to obtain the free space recommended for the machine.</li>
+                    <li></li>
+                    <li>6249fc14-79cb-41b3-b8a9-a58c0108e538</li>
+                    <li>Equipment</li>
+                    <li>aafef422-f349-455d-91e9-ab5f009a93b2</li>
+                    <li>Milling stop</li>
+                    <li>Heavy professional version with aluminum stop jaws and fine adjustment</li>
+                    <li></li>
+                    <li>6249fc14-79cb-41b3-b8a9-a58c0108e538</li>
+                    <li>Equipment</li>
+                    <li>f57be931-ba60-46b1-8778-ab5f009aac55</li>
+                    <li>Curved cutting guard</li>
+                    <li>✔</li>
+                    <li></li>
+                    <li>6249fc14-79cb-41b3-b8a9-a58c0108e538</li>
+                    <li>Equipment</li>
+                    <li>331b1caa-82e5-4ebe-9ae6-ab5f009ac8d7</li>
+                    <li>Height adjustment of the spindle</li>
+                    <li>manual</li>
+                    <li></li>
+                    <li>6249fc14-79cb-41b3-b8a9-a58c0108e538</li>
+                    <li>Equipment</li>
+                    <li>a64b9b21-1e46-457c-937a-ab5f009ad0a7</li>
+                    <li>Tilt adjustment of the spindle</li>
+                    <li>manual</li>
+                    <li></li>
+                    <li>6249fc14-79cb-41b3-b8a9-a58c0108e538</li>
+                    <li>Equipment</li>
+                    <li>ed8ab2e5-4aa5-49ff-99c2-ab5f009ae849</li>
+                    <li>Control</li>
+                    <li>manual height and swivel adjustment of the milling unit</li>
+                    <li></li>
+                    <li>6249fc14-79cb-41b3-b8a9-a58c0108e538</li>
+                    <li>Equipment</li>
+                    <li>2ec6c650-02e9-4d4c-abe8-ab5f009af8f0</li>
+                    <li>Position of the controls</li>
+                    <li>on the machine body</li>
+                    <li></li>
+                    <li>5403c52f-6cb0-4772-9760-a5fa00834c4c</li>
+                    <li>Electrical Data</li>
+                    <li>075c04cd-685e-491e-afd6-a52a00dbf76b</li>
+                    <li>Supply voltage</li>
+                    <li>400</li>
+                    <li>V</li>
+                    <li>5403c52f-6cb0-4772-9760-a5fa00834c4c</li>
+                    <li>Electrical Data</li>
+                    <li>5c502ecf-af43-4d7a-8bf4-a52a00dbf77a</li>
+                    <li>Mains frequency</li>
+                    <li>50</li>
+                    <li>Hz</li>
+                    <li>5403c52f-6cb0-4772-9760-a5fa00834c4c</li>
+                    <li>Electrical Data</li>
+                    <li>d10a932f-0c57-412e-80e5-a91b00d11728</li>
+                    <li>Drive motor output</li>
+                    <li>5.0</li>
+                    <li>kW</li>
+                    <li>0cf594e1-6420-48a5-b49f-a4ff008b11cc</li>
+                    <li>Milling spindle</li>
+                    <li>77af9bf2-fc18-420c-a600-a63a00bb64f8</li>
+                    <li>Usable spindle length</li>
+                    <li>140 / 170</li>
+                    <li>mm</li>
+                    <li>0cf594e1-6420-48a5-b49f-a4ff008b11cc</li>
+                    <li>Milling spindle</li>
+                    <li>f3bed19c-89ef-4a3f-8d2e-a63a00bb64ff</li>
+                    <li>Explanations of usable spindle length</li>
+                    <li>with spindle Ø 30 - 35 / with spindle Ø 40 - 50 mm</li>
+                    <li></li>
+                    <li>0cf594e1-6420-48a5-b49f-a4ff008b11cc</li>
+                    <li>Milling spindle</li>
+                    <li>8c75a3f9-fbdd-45b2-a11f-a63a00bb6507</li>
+                    <li>Milling spindle stroke </li>
+                    <li>90</li>
+                    <li>mm</li>
+                    <li>0cf594e1-6420-48a5-b49f-a4ff008b11cc</li>
+                    <li>Milling spindle</li>
+                    <li>36b63241-aa55-423e-9dca-a63a00bb651d</li>
+                    <li>Spindle speed(s)</li>
+                    <li>3000/4500/6000 / 8000/10000</li>
+                    <li>min¯¹</li>
+                    <li>598066f9-4074-467f-a8c7-a63a008c5d4a</li>
+                    <li>Milling cutter diameter max.</li>
+                    <li>00d6a3e1-9c28-4c68-aeb1-a63a00bb653b</li>
+                    <li>Max. tool diamter lowerable </li>
+                    <li>320</li>
+                    <li>mm</li>
+                    <li>598066f9-4074-467f-a8c7-a63a008c5d4a</li>
+                    <li>Milling cutter diameter max.</li>
+                    <li>a7e372af-4515-42e5-b546-a63a00bb6542</li>
+                    <li>Max. tool diamter profile milling </li>
+                    <li>250</li>
+                    <li>mm</li>
+                    <li>598066f9-4074-467f-a8c7-a63a008c5d4a</li>
+                    <li>Milling cutter diameter max.</li>
+                    <li>545d90ce-dad3-46d3-8aba-a63a00bb6549</li>
+                    <li>Max. tool diamter tenoning milling</li>
+                    <li>350</li>
+                    <li>mm</li>
+                    <li>598066f9-4074-467f-a8c7-a63a008c5d4a</li>
+                    <li>Milling cutter diameter max.</li>
+                    <li>0bcfd436-b5b7-408a-9319-a63a00bb6558</li>
+                    <li>Max. tool diamter form milling</li>
+                    <li>160</li>
+                    <li>mm</li>
+                </ul>
+            </div>
+
+            <div class="label">ShortDescription:</div>
+            <div>With rigid milling spindle</div>
+
+            <div class="label">Classification:</div>
+            <div>ToolMachine</div>
+
+            <div class="label">EanNumber:</div>
+            <div>4036351177562</div>
+
+            <div class="label">CustomNumber:</div>
+            <div>84659200</div>
+
+            <div class="label">ShipmentType:</div>
+            <div>Carrier</div>
+
+            <div class="label">DeliveryContent:</div>
+            <div><ul><li> Rigid milling spindle </li><li> Speed ​​indicator via LED on the front </li><li> Aluminum stop jaws </li><li> Bogenfrässchutzhaube </li><li> Right-left rotation of the milling spindle </li><li> MK 4 change milling spindle </li><li> Milling stop with crank / hand wheel adjustment from the front with numeric display </li><li> Side tenoning slide table with tiltable telescopic ruler with four stops and reference device </li><li> Splinter wood at the stop </li><li> Emergency switch </li><li> Protection arm for operator </li><li> Micro-protection switch with speed limitation 3000/4500 min-1 </li><li> Tenoning hood </li><li> Table extension right </li><li> Extractable workpiece support on the front </li></ul></div>
+
+            <div class="label">KeyFeatures:</div>
+            <div>-</div>
+
+            <div class="label">Keywords:</div>
+            <div>-</div>
+
+            <div class="label">Length:</div>
+            <div>-</div>
+
+            <div class="label">Height:</div>
+            <div>-</div>
+
+            <div class="label">Width:</div>
+            <div>-</div>
+
+            <div class="label">WeightGross:</div>
+            <div>615</div>
+
+            <div class="label">WeightNet:</div>
+            <div>615</div>
+
+            <div class="label">WeightUnit:</div>
+            <div>kg</div>
+
+            <div class="label">ClassificationSystems:</div>
+            <div>ECLASS|5.1.4|17071190</div>
+
+            <div class="label">SeriesTypeDescription:</div>
+            <div>F</div>
+
+            <div class="label">SeriesShortDescription:</div>
+            <div>-</div>
+
+            <div class="label">MinimalSellingUnit:</div>
+            <div>1</div>
+
+            <div class="label">SellingUnit:</div>
+            <div>pc(s).</div>
+
+        </div>
+
+        <div class="manufacturer-info">
+            <ul><li> Stable steel gray cast iron construction </li><li> Dynamically balanced milling unit anchored to the work table </li><li> Particularly robust construction </li><li> Quiet running with precision aggregates and high dead weight </li><li> Standard with right-left rotation and electronic blocking when changing direction </li><li> 5 speeds of 3000 - 10000 min¹ </li><li> The speed change is easy and convenient from the machine side </li><li> As standard with MK 4 interchangeable spindle system </li><li> Large work table made of gray cast iron for lasting precision </li><li> Easy handling through controls and speed indicator on the front of the machine </li><li> Milling stop with fine adjustment and aluminum stop jaws as standard </li><li> Powerful industrial motors </li></ul> Room amenities: <ul><li> Large-dimensioned milling stop, multiple adjustable </li><li> With aluminum stop jaws </li></ul><ul><li> Numerical display of the set spindle height, tenth of a degree </li></ul></ul> CASADEI F 23 TL <ul><li> Version with side tenoning slide table with tiltable telescopic ruler with four stops and reference device, splitter wood at the stop, emergency stop switch, operator protection arm, miniature circuit breaker with speed limitation 3000/4500 min¯¹, tenoning cutterhead </li><li> Additionally with table extension on the right and extractable workpiece support on the front </li></ul> CASADEI F 25 LL FK <ul><li> complete with table extension right and left with material rolls and extendable workpiece support at the front </li><li> Total width 2500 mm </li></ul> Spindle fence <ul><li> Milling stop with crank / handwheel adjustment can be operated from the front </li><li> With numeric display </li></ul> change spindle <ul><li> Replacement spindle MK 4 as standard on all CASADEI F 23 and F 25 models </li></ul> Option sliding carriage <ul><li> for small tenoning and slotting </li></ul>
+<strong>Manufacturer</strong>
+SCM Group S.p.A.
+Via del Lavoro 1/3-Po box 168, 36016 Thiene-Vicenza, Italy
+www.scmgroup.com
+
+
+        </div>
+
+    </div>
+</body>
+</html>

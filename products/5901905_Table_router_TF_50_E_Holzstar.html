@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table router (5901905)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .product-container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product-header {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .product-title {
+            font-size: 24px;
+            margin: 0 0 10px 0;
+        }
+        .product-id {
+            color: #777;
+            font-size: 14px;
+        }
+        .product-info {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            row-gap: 10px;
+            margin-bottom: 20px;
+        }
+        .label {
+            font-weight: bold;
+        }
+        .manufacturer-info {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .weight-info {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+        .catalog-path {
+            background-color: #f5f5f5;
+            border-radius: 4px;
+            padding: 8px;
+        }
+        .path-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        .path-list li {
+            padding: 3px 0;
+            border-bottom: 1px dotted #ddd;
+        }
+        .path-list li:last-child {
+            border-bottom: none;
+        }
+        .item-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        .item-list li {
+            padding: 5px 8px;
+            margin-bottom: 5px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            border-left: 3px solid #999;
+        }
+        .references-list .item-list li {
+            border-left-color: #007bff;
+        }
+        .features-list .item-list li {
+            border-left-color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-header">
+            <h1 class="product-title">Table router</h1>
+            <div class="product-id">Article Number: 5901905</div>
+        </div>
+        
+        <div class="product-info">
+            <div class="label">Brand:</div>
+            <div>Holzstar</div>
+            
+            <div class="label">Type:</div>
+            <div>TF 50 E</div>
+            
+            <div class="label">Model:</div>
+            <div>-</div>
+
+            <div class="label">Catalog Path:</div>
+            <div class="catalog-path">
+                <ul class="path-list">
+                    <li>1</li>
+                    <li>Products in catalog/promotions Autumn-Winter 2024/2025 and spare parts</li>
+                    <li>2</li>
+                    <li>Machines and accessories</li>
+                    <li>5632</li>
+                    <li>Woodworking machinery</li>
+                    <li>5800</li>
+                    <li>Moulders</li>
+                    <li>5819</li>
+                    <li>Holzstar TF</li>
+                    <li>5826</li>
+                    <li>TF 50 E</li>
+                </ul>
+            </div>
+
+            <div class="label">References:</div>
+            <div class="references-list">
+                <ul class="item-list">
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190551</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190501</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190578</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190579</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190595</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190594</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190504</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190555</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190577</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190573</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190582</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190597</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>05901905104</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190569</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>049sgm6</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>05901905100</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190564</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190572</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190542</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190519</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0406003ZZ</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>042SR17W</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190524</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190520</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190533</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190532CPL</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190552</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190504CB</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190557</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190544</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>05901905SZ12</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>05901905SZ14</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0590190565</li>
+                </ul>
+            </div>
+
+            <div class="label">Features:</div>
+            <div class="features-list">
+                <ul class="item-list">
+                    <li>bdc0a764-065a-4b5a-9bdc-a563008bf6f9</li>
+                    <li>Dimensions and weights</li>
+                    <li>9c44398b-e343-4946-8840-a9190103c086</li>
+                    <li>Max. length (product) ca.</li>
+                    <li>610</li>
+                    <li>mm</li>
+                    <li>bdc0a764-065a-4b5a-9bdc-a563008bf6f9</li>
+                    <li>Dimensions and weights</li>
+                    <li>27266ddc-3033-4279-a010-a9190103c180</li>
+                    <li>Max. width/depth (product) ca.</li>
+                    <li>360</li>
+                    <li>mm</li>
+                    <li>bdc0a764-065a-4b5a-9bdc-a563008bf6f9</li>
+                    <li>Dimensions and weights</li>
+                    <li>c1e34661-3042-4857-9b6e-a52a00d92402</li>
+                    <li>Length (product) approx.</li>
+                    <li>1030</li>
+                    <li>mm</li>
+                    <li>bdc0a764-065a-4b5a-9bdc-a563008bf6f9</li>
+                    <li>Dimensions and weights</li>
+                    <li>82033093-7b2c-4db8-b3bd-a9190103c2c2</li>
+                    <li>Max. height (product) ca.</li>
+                    <li>311</li>
+                    <li>mm</li>
+                    <li>bdc0a764-065a-4b5a-9bdc-a563008bf6f9</li>
+                    <li>Dimensions and weights</li>
+                    <li>c82c812d-5261-4e79-a67b-a52a00d9240c</li>
+                    <li>Width/depth (product) approx.</li>
+                    <li>360</li>
+                    <li>mm</li>
+                    <li>bdc0a764-065a-4b5a-9bdc-a563008bf6f9</li>
+                    <li>Dimensions and weights</li>
+                    <li>34741680-b27f-4ae0-b2e4-a52a00d92416</li>
+                    <li>Height (product) approx.</li>
+                    <li>311</li>
+                    <li>mm</li>
+                    <li>bdc0a764-065a-4b5a-9bdc-a563008bf6f9</li>
+                    <li>Dimensions and weights</li>
+                    <li>b4d3fc7d-ca54-4ef3-acab-a52a00dbf77c</li>
+                    <li>Net weight approx.</li>
+                    <li>21</li>
+                    <li>kg</li>
+                    <li>58398800-515f-4fe4-930d-a62b00a47f18</li>
+                    <li>Extraction port</li>
+                    <li>eb836a1e-4915-4ccb-b74f-a63a00bb6560</li>
+                    <li>Extraction port diameter</li>
+                    <li>100</li>
+                    <li>mm</li>
+                    <li>bdc41fbd-0e5a-4412-9e0e-a63a008c3fea</li>
+                    <li>Work table </li>
+                    <li>f43437c8-2e76-4c76-88b7-a63a00bb64af</li>
+                    <li>Work table length </li>
+                    <li>610</li>
+                    <li>mm</li>
+                    <li>bdc41fbd-0e5a-4412-9e0e-a63a008c3fea</li>
+                    <li>Work table </li>
+                    <li>9bcf19fb-c17b-497e-949d-a63a00bb64c9</li>
+                    <li>Work table width  </li>
+                    <li>360</li>
+                    <li>mm</li>
+                    <li>bdc41fbd-0e5a-4412-9e0e-a63a008c3fea</li>
+                    <li>Work table </li>
+                    <li>b86d2441-5352-4550-aab1-a63a00bb64d3</li>
+                    <li>Table height </li>
+                    <li>311</li>
+                    <li>mm</li>
+                    <li>6249fc14-79cb-41b3-b8a9-a58c0108e538</li>
+                    <li>Equipment</li>
+                    <li>331b1caa-82e5-4ebe-9ae6-ab5f009ac8d7</li>
+                    <li>Height adjustment of the spindle</li>
+                    <li>manual</li>
+                    <li></li>
+                    <li>5403c52f-6cb0-4772-9760-a5fa00834c4c</li>
+                    <li>Electrical Data</li>
+                    <li>075c04cd-685e-491e-afd6-a52a00dbf76b</li>
+                    <li>Supply voltage</li>
+                    <li>230</li>
+                    <li>V</li>
+                    <li>5403c52f-6cb0-4772-9760-a5fa00834c4c</li>
+                    <li>Electrical Data</li>
+                    <li>5c502ecf-af43-4d7a-8bf4-a52a00dbf77a</li>
+                    <li>Mains frequency</li>
+                    <li>50</li>
+                    <li>Hz</li>
+                    <li>5403c52f-6cb0-4772-9760-a5fa00834c4c</li>
+                    <li>Electrical Data</li>
+                    <li>d10a932f-0c57-412e-80e5-a91b00d11728</li>
+                    <li>Drive motor output</li>
+                    <li>1,5</li>
+                    <li>kW</li>
+                    <li>5403c52f-6cb0-4772-9760-a5fa00834c4c</li>
+                    <li>Electrical Data</li>
+                    <li>600b9351-0d27-4c25-88f4-a91900c35c30</li>
+                    <li>Protection class drive motor</li>
+                    <li>IP20</li>
+                    <li></li>
+                    <li>5403c52f-6cb0-4772-9760-a5fa00834c4c</li>
+                    <li>Electrical Data</li>
+                    <li>a46a3545-f1ad-4e1a-8674-a91900d47abe</li>
+                    <li>Duty type drive motor</li>
+                    <li>S1</li>
+                    <li></li>
+                    <li>0cf594e1-6420-48a5-b49f-a4ff008b11cc</li>
+                    <li>Milling spindle</li>
+                    <li>8c75a3f9-fbdd-45b2-a11f-a63a00bb6507</li>
+                    <li>Milling spindle stroke </li>
+                    <li>40</li>
+                    <li>mm</li>
+                    <li>0cf594e1-6420-48a5-b49f-a4ff008b11cc</li>
+                    <li>Milling spindle</li>
+                    <li>36b63241-aa55-423e-9dca-a63a00bb651d</li>
+                    <li>Spindle speed(s)</li>
+                    <li>11500 – 24000</li>
+                    <li>min¯¹</li>
+                    <li>598066f9-4074-467f-a8c7-a63a008c5d4a</li>
+                    <li>Milling cutter diameter max.</li>
+                    <li>79045d8b-39bf-4975-9a87-a63a00bb6533</li>
+                    <li>Max. tool diamter </li>
+                    <li>50</li>
+                    <li>mm</li>
+                </ul>
+            </div>
+
+            <div class="label">ShortDescription:</div>
+            <div>Ideal for use on workbenches</div>
+
+            <div class="label">Classification:</div>
+            <div>ToolMachine</div>
+
+            <div class="label">EanNumber:</div>
+            <div>4036351317975</div>
+
+            <div class="label">CustomNumber:</div>
+            <div>84659200</div>
+
+            <div class="label">ShipmentType:</div>
+            <div>Delivery service</div>
+
+            <div class="label">DeliveryContent:</div>
+            <div><ul><li>Table extensions on both sides</li><li>Mitre fence</li><li>Aluminum routing fence</li><li>Collets for 6, 8 i 12 mm</li><li>Assembly tool (hexagon socket wrench 4mm and 5mm, wrench SW19 and SW24)</li></ul></div>
+
+            <div class="label">KeyFeatures:</div>
+            <div>-</div>
+
+            <div class="label">Keywords:</div>
+            <div>-</div>
+
+            <div class="label">Length:</div>
+            <div>670</div>
+
+            <div class="label">Height:</div>
+            <div>390</div>
+
+            <div class="label">Width:</div>
+            <div>535</div>
+
+            <div class="label">WeightGross:</div>
+            <div>23</div>
+
+            <div class="label">WeightNet:</div>
+            <div>21</div>
+
+            <div class="label">WeightUnit:</div>
+            <div>kg</div>
+
+            <div class="label">ClassificationSystems:</div>
+            <div>ECLASS|5.1.4|17071190</div>
+
+            <div class="label">SeriesTypeDescription:</div>
+            <div>TF</div>
+
+            <div class="label">SeriesShortDescription:</div>
+            <div>-</div>
+
+            <div class="label">MinimalSellingUnit:</div>
+            <div>20</div>
+
+            <div class="label">SellingUnit:</div>
+            <div>pc(s).</div>
+
+        </div>
+
+        <div class="manufacturer-info">
+            <ul><li>Compact and handy design for comfortable use</li><li>Variable speed range from 11500 to 24000 min¯¹</li><li>Spindle height adjustable from 0 to 40 mm</li><li>Large table support thanks to standard extensions on both sides</li><li>Work table made of aluminum</li><li>Mitre stop and various collets included</li></ul>
+<strong>Manufacturer</strong>
+Stürmer Maschinen GmbH
+Dr.-Robert-Pfleger-Str. 26, 96103 Hallstadt, Germany
+info@stuermer-maschinen.de
+
+
+        </div>
+
+    </div>
+</body>
+</html>

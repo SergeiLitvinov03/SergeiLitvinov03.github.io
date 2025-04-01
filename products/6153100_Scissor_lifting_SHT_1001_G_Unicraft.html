@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scissor lifting (6153100)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .product-container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product-header {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .product-title {
+            font-size: 24px;
+            margin: 0 0 10px 0;
+        }
+        .product-id {
+            color: #777;
+            font-size: 14px;
+        }
+        .product-info {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            row-gap: 10px;
+            margin-bottom: 20px;
+        }
+        .label {
+            font-weight: bold;
+        }
+        .manufacturer-info {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .weight-info {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+        .catalog-path {
+            background-color: #f5f5f5;
+            border-radius: 4px;
+            padding: 8px;
+        }
+        .path-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        .path-list li {
+            padding: 3px 0;
+            border-bottom: 1px dotted #ddd;
+        }
+        .path-list li:last-child {
+            border-bottom: none;
+        }
+        .item-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        .item-list li {
+            padding: 5px 8px;
+            margin-bottom: 5px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            border-left: 3px solid #999;
+        }
+        .references-list .item-list li {
+            border-left-color: #007bff;
+        }
+        .features-list .item-list li {
+            border-left-color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-header">
+            <h1 class="product-title">Scissor lifting</h1>
+            <div class="product-id">Article Number: 6153100</div>
+        </div>
+        
+        <div class="product-info">
+            <div class="label">Brand:</div>
+            <div>Unicraft</div>
+            
+            <div class="label">Type:</div>
+            <div>SHT 1001 G</div>
+            
+            <div class="label">Model:</div>
+            <div>-</div>
+
+            <div class="label">Catalog Path:</div>
+            <div class="catalog-path">
+                <ul class="path-list">
+                    <li>1</li>
+                    <li>Products in catalog/promotions Autumn-Winter 2024/2025 and spare parts</li>
+                    <li>2</li>
+                    <li>Machines and accessories</li>
+                    <li>10645</li>
+                    <li>Workshop and lifting technology</li>
+                    <li>10664</li>
+                    <li>Lifting tables</li>
+                    <li>10668</li>
+                    <li>Series SHT</li>
+                </ul>
+            </div>
+
+            <div class="label">References:</div>
+            <div class="references-list">
+                <ul class="item-list">
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310004</li>
+                    <li>SparePart</li>
+                    <li>2</li>
+                    <li>0615310010</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>06153100201</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>06153100202</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>042SR22W</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>06153100204</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>06153100205</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>06153100206</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>06153100207</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>06153100220</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>06153100221</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310023</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310027</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310028</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310029</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310030</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310032</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310034</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310037</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310041</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310046</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>06153100101</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310051P</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310056</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310058</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310059</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310060</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310069</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>06153100DS</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310050</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310008</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310011</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310014</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310015</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310020</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>03629350676</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310067</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0615310036CPL</li>
+                    <li>SparePart</li>
+                    <li>1</li>
+                    <li>0220302</li>
+                </ul>
+            </div>
+
+            <div class="label">Features:</div>
+            <div class="features-list">
+                <ul class="item-list">
+                    <li></li>
+                    <li></li>
+                    <li>1fc3fb6e-822e-4af5-84ac-a5f6012393e1</li>
+                    <li>Load capacity</li>
+                    <li>1</li>
+                    <li>t</li>
+                    <li></li>
+                    <li></li>
+                    <li>1f3e55cd-2a2f-4def-b506-a5f60123941d</li>
+                    <li>Min. platform height</li>
+                    <li>82</li>
+                    <li>mm</li>
+                    <li></li>
+                    <li></li>
+                    <li>0eeea423-b0fb-4a98-8228-a5f60123941e</li>
+                    <li>Max. platform height</li>
+                    <li>760</li>
+                    <li>mm</li>
+                    <li></li>
+                    <li></li>
+                    <li>e9f37e03-8053-4f6e-a435-a5f601239420</li>
+                    <li>Lifting speed loaded</li>
+                    <li>42</li>
+                    <li>mm/s</li>
+                    <li></li>
+                    <li></li>
+                    <li>7e66195b-bdef-4b2d-a230-a5f60123941f</li>
+                    <li>Lifting time platform height min. to max.</li>
+                    <li>18</li>
+                    <li>s</li>
+                    <li>bdc0a764-065a-4b5a-9bdc-a563008bf6f9</li>
+                    <li>Dimensions and weights</li>
+                    <li>b4d3fc7d-ca54-4ef3-acab-a52a00dbf77c</li>
+                    <li>Net weight approx.</li>
+                    <li>250</li>
+                    <li>kg</li>
+                    <li>bdc0a764-065a-4b5a-9bdc-a563008bf6f9</li>
+                    <li>Dimensions and weights</li>
+                    <li>46c3a808-a8df-41e9-8b05-a5f601239425</li>
+                    <li>External length of platform</li>
+                    <li>1450</li>
+                    <li>mm</li>
+                    <li>bdc0a764-065a-4b5a-9bdc-a563008bf6f9</li>
+                    <li>Dimensions and weights</li>
+                    <li>8e35e9d4-fd6e-4faf-8ffe-a5f601239426</li>
+                    <li>External width of platform</li>
+                    <li>1140</li>
+                    <li>mm</li>
+                    <li>5403c52f-6cb0-4772-9760-a5fa00834c4c</li>
+                    <li>Electrical Data</li>
+                    <li>075c04cd-685e-491e-afd6-a52a00dbf76b</li>
+                    <li>Supply voltage</li>
+                    <li>400</li>
+                    <li>V</li>
+                    <li>5403c52f-6cb0-4772-9760-a5fa00834c4c</li>
+                    <li>Electrical Data</li>
+                    <li>5c502ecf-af43-4d7a-8bf4-a52a00dbf77a</li>
+                    <li>Mains frequency</li>
+                    <li>50</li>
+                    <li>Hz</li>
+                    <li>5403c52f-6cb0-4772-9760-a5fa00834c4c</li>
+                    <li>Electrical Data</li>
+                    <li>5fe7815f-f3b6-48dc-b1eb-a91b00d118d7</li>
+                    <li>Drive motor output</li>
+                    <li>0,75</li>
+                    <li>kW</li>
+                </ul>
+            </div>
+
+            <div class="label">ShortDescription:</div>
+            <div>With hydraulic lifting device and particularly low overall height, for ergonomic work at optimum working height</div>
+
+            <div class="label">Classification:</div>
+            <div>ToolMachine</div>
+
+            <div class="label">EanNumber:</div>
+            <div>4036351042419</div>
+
+            <div class="label">CustomNumber:</div>
+            <div>84254200</div>
+
+            <div class="label">ShipmentType:</div>
+            <div>Carrier</div>
+
+            <div class="label">DeliveryContent:</div>
+            <div>Ramp</div>
+
+            <div class="label">KeyFeatures:</div>
+            <div>-</div>
+
+            <div class="label">Keywords:</div>
+            <div>SHT 1001 G</div>
+
+            <div class="label">Length:</div>
+            <div>1470</div>
+
+            <div class="label">Height:</div>
+            <div>1500</div>
+
+            <div class="label">Width:</div>
+            <div>1160</div>
+
+            <div class="label">WeightGross:</div>
+            <div>250</div>
+
+            <div class="label">WeightNet:</div>
+            <div>250</div>
+
+            <div class="label">WeightUnit:</div>
+            <div>kg</div>
+
+            <div class="label">ClassificationSystems:</div>
+            <div>ECLASS|5.1.4|36120205</div>
+
+            <div class="label">SeriesTypeDescription:</div>
+            <div>SHT G & U</div>
+
+            <div class="label">SeriesShortDescription:</div>
+            <div>-</div>
+
+            <div class="label">MinimalSellingUnit:</div>
+            <div>1</div>
+
+            <div class="label">SellingUnit:</div>
+            <div>pc(s).</div>
+
+        </div>
+
+        <div class="manufacturer-info">
+            <ul><li>With closed platform</li><li>Includes drive-on ramp for convenient drive-on of equipment with chassis such as lawn mowers, etc.</li><li>Separate control unit with 3 meters of cable, control buttons and emergency stop switch</li><li>Stepless lifting and lowering</li><li>Stable steel construction for optimum stability</li><li>Meets the safety criteria of EN 1570</li><li>Chromed piston rods</li></ul>
+<strong>Manufacturer</strong>
+Stürmer Maschinen GmbH
+Dr.-Robert-Pfleger-Str. 26, 96103 Hallstadt, Germany
+info@stuermer-maschinen.de
+
+
+        </div>
+
+    </div>
+</body>
+</html>
